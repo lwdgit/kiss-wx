@@ -1,0 +1,32 @@
+/* pages/main/post.wxss */
+@import '../common/markdown/markdown.wxss';
+
+.index-bd {
+  background-image: url(http://sjbz.fd.zol-img.com.cn/t_s480x854c/g5/M00/0F/0F/ChMkJlfJTVSIUWqxAAD13oS3foQAAU9HQNA6sgAAPX2111.jpg);
+  background-size: cover;
+  padding: 16rpx;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow:auto;
+  width: 100%;
+  height:100%;
+  box-sizing: border-box;
+}
+
+.post-container {
+  background: rgba(255,255,255,0.95);
+  border-radius: 8rpx;
+  overflow:hidden;
+}
+
+.post-title {
+  font-size: 48rpx;
+  padding: 60rpx 16rpx 32rpx;
+  background: #263238;
+  color: #fafafa;
+}
+
+.post-content {
+  padding: 16rpx;
+}

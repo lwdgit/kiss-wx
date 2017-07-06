@@ -1,0 +1,10 @@
+<!--pages/main/post.wxml-->
+<import src="../common/markdown/markdown.wxml"/>
+<view class="index-bd">
+  <view class="post-container">
+    <view class="post-title">{{title}}</view>
+    <view class="post-content">
+      <template is="markdown" data="{{markdown: content}}" />
+    </view>
+  </view>
+</view>

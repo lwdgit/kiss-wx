@@ -1,0 +1,23 @@
+<!--pages/main/list.wxml-->
+<import src="../common/markdown/markdown.wxml"/>
+
+<view class="index-bd">
+    <view class="posts-bg" />
+    <view class="posts-list">
+        <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+          <navigator url="post?data=/{{item.url}}" class="navigator">
+            <view id="{{item.url}}" class="posts-list-item" bindtap="postsToggle">
+              <view class="posts-list-title">{{item.title}}</view>
+              <view class="posts-list-summary">
+                <template is="markdown" data="{{markdown: item.summary}}" />
+              </view>
+              <view class="posts-list-meta">
+                <view class="date">{{item.date}}</view>
+                <view class="catetory">{{item.category}}</view>
+              </view>
+            </view>
+          </navigator>
+        </block>
+    </view>
+
+</view>

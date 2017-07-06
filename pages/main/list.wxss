@@ -1,0 +1,52 @@
+/* pages/main/list.wxss */
+
+@import '../common/markdown/markdown.wxss';
+
+.posts-bg {
+  background-image: url(http://sjbz.fd.zol-img.com.cn/t_s480x854c/g5/M00/0F/0F/ChMkJlfJTVSIUWqxAAD13oS3foQAAU9HQNA6sgAAPX2111.jpg);
+  background-size: cover;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow:auto;
+  width: 100%;
+  height:100%;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+.posts-list {
+  padding: 0rpx;
+}
+
+.posts-list-item {
+  margin: 16rpx;
+  border-radius: 8rpx;
+  background: rgba(255,255,255,0.95);
+  overflow: hidden;
+}
+
+.posts-list-title {
+  font-size: 42rpx;
+  color: #fafafa;
+  padding: 48rpx 16rpx 30rpx;
+  background: #263238;
+}
+.posts-list-summary {
+  padding: 16rpx;
+}
+.posts-list-meta {
+  display: flex;
+  padding: 16rpx;
+  border-top: 1px solid #ddd;
+}
+.posts-list-meta > view {
+  font-size: 24rpx;
+  padding: 12rpx;
+}
+.posts-list-meta .date {
+  color: #b5b5b5;
+}
+.posts-list-meta .catetory {
+  color: #4caf50;
+}

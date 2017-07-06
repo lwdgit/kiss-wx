@@ -1,0 +1,9 @@
+<!--pages/index/loading.wxml-->
+<import src="../common/markdown.wxml" />
+<view>
+<text>加载中...</text>
+<text>{{content1}} </text>
+<block wx:for="{{content3}}" wx:key="*this">
+  <template is="markdown" data="{{markdown: item.markdown}}" ></template>  
+</block>
+</view>
